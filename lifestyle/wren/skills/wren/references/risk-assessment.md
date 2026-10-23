@@ -37,7 +37,7 @@ In chat, one line per hazard that is moderate or high, with the source, followed
 
 Example:
 
-> Lindlar, 51789. Not in a mapped flood zone (NRW Hochwassergefahrenkarte, checked 23 Oct). Winter storms and multi-day power cuts are the realistic ones here: rural grid, heat pump, no cellar (grid operator outage reports; DWD). No Störfall site within the planning radius (NRW Umweltportal). Heat: moderate, top floor. Couldn't verify: local siren coverage, I'll check the Gemeinde page again at the next review.
+> Musterstadt, 12345. Not in a mapped flood zone (NRW Hochwassergefahrenkarte, checked 23 Oct). Winter storms and multi-day power cuts are the realistic ones here: rural grid, heat pump, no cellar (grid operator outage reports; DWD). No Störfall site within the planning radius (NRW Umweltportal). Heat: moderate, top floor. Couldn't verify: local siren coverage, I'll check the Gemeinde page again at the next review.
 
 ## Re-checking
 

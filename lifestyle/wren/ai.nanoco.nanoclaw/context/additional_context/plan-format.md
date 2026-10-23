@@ -11,8 +11,8 @@ updated: 2026-10-23
 ## People
 | name | age band | role | needs |
 |------|----------|------|-------|
-| Eva  | adult    | lead | none  |
-| Tom  | toddler  |      | nappies, formula?, pram |
+| Alex | adult    | lead | none  |
+| Mia  | toddler  |      | nappies, formula?, pram |
 
 age band: infant / toddler / child / teen / adult / senior
 
@@ -20,11 +20,13 @@ age band: infant / toddler / child / teen / adult / senior
 | name | species | food/day | meds |
 
 ## Locations
-| label | where (town, postcode) | type | floor | cellar | heating | car |
-|-------|------------------------|------|-------|--------|---------|-----|
-| home  | …                      | flat/house | … | yes/no | gas/oil/heat pump/district | yes/no |
-| work  | … | | | | | |
-| daycare / school | … | | | | | |
+| label | where (town, postcode) | coords | type | floor | cellar | heating | car |
+|-------|------------------------|--------|------|-------|--------|---------|-----|
+| home  | …                      | lat, lon or – | flat/house | … | yes/no | gas/oil/heat pump/district | yes/no |
+| work  | … | | | | | | |
+| daycare / school | … | | | | | | |
+
+coords: only when the `osm` server geocoded the location; otherwise `–`.
 
 ## Travel (next 12 months)
 | when | where | with whom |
@@ -47,6 +49,13 @@ one-off: € … | monthly: € … | hard ceiling: yes/no
 ## Already in place
 - (what they told you they have; no inference)
 
+## Stock and rotation
+| item | quantity | stored | rotate by |
+|------|----------|--------|-----------|
+| drinking water (tap, bottled) | 60 L | 2026-11-02 | 2027-05-02 |
+
+One row per stocked item with a shelf life (water, food, medication, batteries). Added when the plan item is done; the monthly kit review reads it.
+
 ## Check-in cadence
 weekly on <day> at <time>; monthly kit review: yes/no; quarterly review: yes/no
 ```
@@ -57,15 +66,20 @@ weekly on <day> at <time>; monthly kit review: yes/no; quarterly review: yes/no
 # Risks
 checked: 2026-10-23
 
-## home (Lindlar, 51789)
+## home (Musterstadt, 12345)
 | hazard | likelihood | evidence | source | checked |
 |--------|------------|----------|--------|---------|
 | river flooding | low | not in HQ100 zone | NRW Hochwassergefahrenkarte (link) | 2026-10-23 |
 | power cut >24h | moderate | rural grid, storm history | Netzbetreiber Störungsmeldungen; DWD | 2026-10-23 |
-| winter storm | moderate | DWD climate record for the Oberbergisches Land | DWD (link) | 2026-10-23 |
+| winter storm | moderate | DWD climate record for the region | DWD (link) | 2026-10-23 |
 
 ## work (…)
 …
+
+## Nearby help (home, only with the `osm` server)
+| place | type | on foot | checked |
+|-------|------|---------|---------|
+| … | pharmacy | 8 min | 2026-10-23 |
 
 ## travel: Gran Canaria, Jan 2027
 | hazard | note | source |
@@ -82,8 +96,8 @@ goal: solid (10 days) | budget: €300 one-off, €30/month | started: 2026-10-2
 ## Red (this week)
 | # | item | why | cost band | owner | due | status |
 |---|------|-----|-----------|-------|-----|--------|
-| R1 | Install NINA, enable alerts for Lindlar | official warnings | €0 | Eva | 2026-10-25 | open |
-| R2 | Comms card: out-of-area contact, meeting points | family may be apart | €0 | Eva | 2026-10-26 | open |
+| R1 | Install NINA, enable alerts for Musterstadt | official warnings | €0 | Alex | 2026-10-25 | open |
+| R2 | Comms card: out-of-area contact, meeting points | family may be apart | €0 | Alex | 2026-10-26 | open |
 
 ## Amber (next 4–8 weeks)
 | # | item | why | cost band | owner | due | status |

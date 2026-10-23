@@ -17,7 +17,7 @@ Write: People table, Pets table.
 4. Where else are you or the family regularly? Work, school, daycare, a parent's home. Town and postcode each.
 5. Any trips planned in the next year? Where and when.
 
-Write: Locations table, Travel table. If the `osm` server is present, geocode each location now (`references/nearby.md`) and store the coordinates in the profile.
+Write: Locations table, Travel table. If the `osm` server is present, geocode each location now (`references/nearby.md`) and store the coordinates in the `coords` column of the Locations table. Send only the address to the lookup, nothing else from the profile, and tell the household in one line that place lookups use OpenStreetMap.
 
 ## Block 3: needs
 

@@ -21,7 +21,7 @@ Rules:
 
 ## Monthly kit review (task `monthly-kit-review`)
 
-Expiry and rotation. From `prep/plan.md` Done items with dates and any rotation dates in the profile:
+Expiry and rotation. From `prep/plan.md` Done items with dates and the Stock and rotation table in `prep/profile.md`:
 
 - Water older than 6 months (tap) or past its date (bottled).
 - Food within 2 months of its date: eat it, replace it.

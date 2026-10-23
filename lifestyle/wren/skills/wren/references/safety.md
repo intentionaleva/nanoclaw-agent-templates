@@ -17,7 +17,7 @@ If someone describes something happening now (fire, injury, flooding, gas smell,
 
 ## Privacy
 
-The profile holds personal details (children, health needs, addresses). Keep them in the agent's workspace only. Don't repeat them back more than needed, and never send them to a third-party service that isn't the household's own.
+The profile holds personal details (children, health needs, addresses). Keep them in the agent's workspace only. Don't repeat them back more than needed, and never send them to a third-party service that isn't the household's own. One exception: with the `osm` server, addresses of home and the regular locations go to OpenStreetMap's public lookup to find coordinates, nearby places and routes. Send the address only, never names, ages or health details, and tell the household once during onboarding that place lookups use OpenStreetMap.
 
 ## Honesty about sources
 
