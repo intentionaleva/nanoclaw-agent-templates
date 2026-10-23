@@ -1,6 +1,6 @@
 # Wren: handoff for Claude Code
 
-Goal: open a pull request adding `lifestyle/wren/` to `nanocoai/nanoclaw-templates`. The template folder is in `wren-template.zip` (unzips to `wren/`). GitHub handle: `intentionaleva`.
+Goal: open a pull request adding `lifestyle/wren/` to `nanocoai/nanoclaw-templates`. The source is this repo (`intentionaleva/wren`, folder `lifestyle/wren/`). GitHub handle: `intentionaleva`. Do this only once Wren has been stamped and tested on a real install.
 
 ## 1. Fork and clone
 
@@ -16,21 +16,20 @@ git fetch upstream && git checkout -b add-lifestyle-wren upstream/main
 ## 2. Drop the template in
 
 ```bash
-unzip ~/Downloads/wren-template.zip -d /tmp/wren-unzip
-mkdir -p lifestyle
-cp -R /tmp/wren-unzip/wren lifestyle/wren
-sed -i '' 's#https://github.com/<handle>#https://github.com/intentionaleva#' lifestyle/wren/plugin.json   # macOS; on Linux drop the ''
+cp -R ~/path/to/wren/lifestyle/wren lifestyle/wren   # from your clone of intentionaleva/wren
 ```
 
-Confirm the layout is exactly two levels: `lifestyle/wren/plugin.json` exists.
+Confirm the layout is exactly two levels: `lifestyle/wren/plugin.json` exists, and `author.url` in it is your handle.
 
 ## 3. Run the registry checks
 
 ```bash
 node scripts/check-templates.mjs
+node scripts/build-index.mjs
+git diff --exit-code index.json || echo "index.json changed: commit it"
 ```
 
-Expected: `check-templates: N template(s) OK: … lifestyle/wren …`. Fix anything it lists before going on. It walks every template, so unrelated failures in other folders are not yours.
+Expected: `check-templates: N template(s) OK: … lifestyle/wren …`. `index.json` is generated from every `plugin.json` and CI fails if it drifts, so the regenerated file goes in the same commit. The checks walk every template; unrelated failures in other folders are not yours.
 
 ## 4. Stamp and test against a real install
 
@@ -60,7 +59,7 @@ When done: `ncl groups delete --id <group-id>`.
 
 ```bash
 cd nanoclaw-templates
-git add lifestyle/wren
+git add lifestyle/wren index.json
 git diff --cached | grep -iE 'sk-|ghp_|token|secret|api_key' || echo "no secrets"
 git commit -m "Add wren template (lifestyle/)"
 git push -u origin add-lifestyle-wren
