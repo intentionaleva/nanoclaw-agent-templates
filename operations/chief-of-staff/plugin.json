@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chief-of-staff",
+  "version": "1.0.0",
+  "description": "Chief of staff for a founder or ops lead: goal tracking, open threads, weekly priorities, decision memos",
+  "author": { "name": "Eva Spexard", "url": "https://intentionalremote.com" }
+}

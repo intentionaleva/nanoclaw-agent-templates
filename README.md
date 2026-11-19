@@ -8,6 +8,7 @@ Agent templates for [NanoClaw](https://github.com/nanocoai/nanoclaw), made by Ev
 | [**Nina**](lifestyle/nutrition-claim-check) | No-BS nutrition fact checker. Send a claim you saw and get a sourced verdict with an evidence grade and receipts. |
 | [**Paula**](lifestyle/plant-based-coach) | Go-plant-based coach. Learns what you like, suggests three dishes at a time, finds the recipe and a shop nearby, and checks in on your day. |
 | [**Rese**](hr/reference-check) | Consent-first reference checks by phone over Dial. One message in, a neutral structured summary out, no scoring. |
+| [**Chief of staff**](operations/chief-of-staff) | Chief of staff for a founder or ops lead. Tracks the goal and every open thread, tells you what to do with this week's hours, writes decision memos, never sends anything for you. Also works as a Claude or ChatGPT project. |
 
 The folders follow the `<category>/<template>` layout of the official [NanoClaw template library](https://github.com/nanocoai/nanoclaw-templates), so each one can be copied there unchanged.
 
@@ -26,7 +27,7 @@ Then connect it to a chat with `/manage-channels` and say hello. Some templates 
 
 ## Add a template
 
-Put it in its own folder under a category (`lifestyle/`, `hr/`, …) with a `plugin.json` and a `README.md`, then add a row to the table above.
+Put it in its own folder under a category (`lifestyle/`, `hr/`, `operations/`, …) with a `plugin.json` and a `README.md`, then add a row to the table above.
 
 ## License
 
