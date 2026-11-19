@@ -17,4 +17,4 @@ Tools you'll use: `geocode` (address to coordinates, once per location at onboar
 - OSM is community data and can be out of date. Say "according to OpenStreetMap" and tell the household to confirm opening hours and emergency status with the municipality. A pharmacy on the map is a lead, not a promise.
 - Never use OSM for a hazard likelihood. The official map is the source; OSM only helps find what to verify.
 - Keep output short: name, type, distance on foot. Three to five places, not twenty.
-- Coordinates and addresses are personal data; they live in `prep/` only.
+- Coordinates and addresses are personal data; they live in `prep/` only. The lookup itself gets the address and nothing else from the profile (see `references/safety.md`, Privacy).

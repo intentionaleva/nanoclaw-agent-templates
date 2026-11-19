@@ -23,7 +23,7 @@ Format:
 HOUSEHOLD EMERGENCY CARD                      updated <date>
 
 Emergency: 112   Police: 110   Doctor on call: 116117
-Alerts: NINA (home: Lindlar; also: Köln)
+Alerts: NINA (home: Musterstadt; also: Köln)
 
 WE TEXT, WE DON'T CALL. Message: "OK at <place>".
 

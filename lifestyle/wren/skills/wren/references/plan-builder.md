@@ -40,4 +40,4 @@ Send the reds as a numbered list with the "why" in half a sentence and the exact
 
 ## Updating
 
-When an item is done, move it to Done with the date. When a profile fact changes, re-size the affected items only and say which ones moved. When the quarterly review re-runs risks, re-tier anything the new risks touch.
+When an item is done, move it to Done with the date. If it is stock with a shelf life (water, food, medication, batteries), also add a row to the Stock and rotation table in `prep/profile.md` with its rotate-by date. When a profile fact changes, re-size the affected items only and say which ones moved. When the quarterly review re-runs risks, re-tier anything the new risks touch.
